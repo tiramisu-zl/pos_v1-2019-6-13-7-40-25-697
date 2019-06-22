@@ -1,0 +1,45 @@
+#1 获得商品数量
+输入：
+    inputs: [String]
+输出：
+    countedGoods:[{
+        code: String,
+        number: Number,
+    }]
+#2 获得折扣清单
+输入：
+    countedGoods: [{
+        code: String,
+        number: Number,
+    }]
+    goodsInfo: [{
+        barcode: String,
+        name: String,
+        unit: String,
+        price: Number,
+    }]: loadAllScore()
+    promotionInfo: loadPromotions()
+输出：
+    promotionGoods:[{
+        barcode: String,
+        name: String,
+        unit: String,
+        price: Number,
+        number: Number,
+        subtotal: Number,
+        discountPrice: Number,
+    }]
+#3 计算总计
+输入：
+    promotionGoods
+输出：
+    summary: {
+      totalPrices: Number,
+      discount: Number,
+    }
+#4 打印小票
+输入：
+    promotionGoods
+    summary
+输出：
+    result: String: console.log()
